@@ -1,0 +1,17 @@
+{
+  "name": "extract-tqapkg",
+  "version": "1.0.0",
+  "description": "提取QQ小程序包的内容",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/lunnlew/extract-tqapkg.git"
+  },
+  "author": "LunnLew",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
