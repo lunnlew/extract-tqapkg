@@ -60,11 +60,13 @@ var start = async (params) => {
   console.log("\nFile Saveing:");
   let fix = 0
   let dir
-  if(filename.indexOf('wxapkg')!==-1){
+  if (filename.indexOf('wxapkg') !== -1) {
     fix = 1
     dir = path.resolve(filename, "..", path.basename(filename, ".wxapkg"));
-  } else {
+  } else if (filename.indexOf('tqapkg') !== -1) {
     dir = path.resolve(filename, "..", path.basename(filename, ".tqapkg"));
+  } else if (filename.indexOf('jdapkg') !== -1) {
+    dir = path.resolve(filename, "..", path.basename(filename, ".jdapkg"));
   }
   for (let file of files) {
     let filename = path.join(dir, (file.name.startsWith("/") ? "." : "") + file.name)
